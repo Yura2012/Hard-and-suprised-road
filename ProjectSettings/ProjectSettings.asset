@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: bb46a6cc050b5774b8b1ad4ad220698c
+  productGUID: 16da12c961a42654db4a5073957348ac
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -755,11 +755,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 263d39e3-c858-423a-8565-abf6dafd226d
+  cloudProjectId: 1a48be09-bc58-4ccf-a1a6-9d65adfaca92
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: Hard and suprised road
-  organizationId: yura2012_2012
+  organizationId: lekhnovskyi_mark
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
