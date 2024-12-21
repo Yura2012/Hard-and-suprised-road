@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuManager : MonoBehaviour
+public class Prehistory: MonoBehaviour
 {
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Instruction");
+        SceneManager.LoadScene("Budilnik");
     }
 
 }

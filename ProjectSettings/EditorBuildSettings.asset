@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: f0a8e0c24f4aa984bbe121d745d9bcd4
   - enabled: 1
-    path: Assets/ModularFirstPersonController/DemoScene/Demo.unity
+    path: Assets/Scenes/Demo.unity
     guid: 26e88a738e5be6546a9965e166566777
+  - enabled: 1
+    path: Assets/Scenes/Instruction.unity
+    guid: f8be5091e58648245a8968149332612b
+  - enabled: 1
+    path: Assets/Scenes/Budilnik.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Prehistory.unity
+    guid: 618b4bd10217db84eb4f19a63aa8c623
   m_configObjects: {}

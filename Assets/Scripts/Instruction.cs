@@ -7,6 +7,6 @@ public class Instruction : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("Budilnik");
+        SceneManager.LoadScene("Prehistory");
     }
 }
