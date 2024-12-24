@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu_UA.unity
     guid: 4f0b4bd5252f0294f813ced7a9297b2f
+  - enabled: 1
+    path: Assets/Scenes/Instruction2.unity
+    guid: 48b740468a5967e49b2f01b7ac71c003
+  - enabled: 1
+    path: Assets/Scenes/Prehistory_UA.unity
+    guid: bbbddd3fc36ce9b4891968476171afb1
   m_configObjects: {}
