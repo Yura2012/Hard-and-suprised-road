@@ -1878,7 +1878,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &5355484737104232716
+--- !u!1001 &2015143992
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1888,15 +1888,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 136550402390210895, guid: 54d3dc273990ea84ab7a213d73999dbf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3.44
       objectReference: {fileID: 0}
     - target: {fileID: 136550402390210895, guid: 54d3dc273990ea84ab7a213d73999dbf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5
+      value: 1.58
       objectReference: {fileID: 0}
     - target: {fileID: 136550402390210895, guid: 54d3dc273990ea84ab7a213d73999dbf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.1370971
       objectReference: {fileID: 0}
     - target: {fileID: 136550402390210895, guid: 54d3dc273990ea84ab7a213d73999dbf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1928,12 +1928,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 156487474333233597, guid: 54d3dc273990ea84ab7a213d73999dbf, type: 3}
       propertyPath: m_Name
-      value: Door with key
+      value: Door with key 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6528123297441385844, guid: 54d3dc273990ea84ab7a213d73999dbf, type: 3}
-      propertyPath: Text
-      value: 
-      objectReference: {fileID: 1156926705}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1951,6 +1947,6 @@ SceneRoots:
   - {fileID: 245396805}
   - {fileID: 931780466}
   - {fileID: 1739698126}
-  - {fileID: 5355484737104232716}
   - {fileID: 1485860113}
   - {fileID: 1936980687}
+  - {fileID: 2015143992}
