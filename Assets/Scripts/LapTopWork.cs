@@ -11,6 +11,9 @@ public class LapTopWork : MonoBehaviour
     public Text NoticeTextObj;
     public string CantWorkText;
     public MoneyCounter MoneyCounterScript;
+    public Animator Animator1;
+    public GameObject prefab; // Посилання на префаб
+    public GameObject emptyGameObject; // Порожній об'єкт, де потрібно створити префаб
 
     private bool isWorking = false;
     private bool canWork = false;
@@ -46,10 +49,13 @@ public class LapTopWork : MonoBehaviour
 
             if (WorkProgress.value >= 100)
             {
+                Instantiate(prefab, emptyGameObject.transform.position, emptyGameObject.transform.rotation);
                 WorkProgress.value = 0;
                 MoneyCounterScript.Money += Payment;
                 canWork = false;
+                Animator1.enabled = false;
                 DisableUI();
+
             }
         }
     }
