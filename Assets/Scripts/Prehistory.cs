@@ -8,7 +8,7 @@ public class Prehistory: MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Budilnik");
+        SceneManager.LoadScene("Budilnik_EN");
     }
 
 }
