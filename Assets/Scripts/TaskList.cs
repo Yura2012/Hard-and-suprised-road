@@ -19,6 +19,7 @@ public class TaskList : MonoBehaviour
         // Якщо гравець знаходиться поруч і натискає E
         if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
+            interactionText.enabled = false;
             // Перемикаємо видимість панелі завдань
             taskPanel.SetActive(!taskPanel.activeSelf);
         }
@@ -31,6 +32,7 @@ public class TaskList : MonoBehaviour
         {
             isPlayerNearby = true;
             interactionText.enabled = true; // Показуємо текст підказки
+            
         }
     }
 
