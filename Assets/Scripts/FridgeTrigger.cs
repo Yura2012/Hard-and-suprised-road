@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class FridgeTrigger : MonoBehaviour
 {
+    public GameObject FrigeCanvas;
     public Animator Door;
     public bool isOpen = false;
+    public FirstPersonController FPSController;
+
+    private void Start()
+    {
+        FrigeCanvas.SetActive(false);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
 
         if (isOpen == true)
         {
-            Door.Play("OpenFridgeleft, OpenFridgeright");
+            Door.Play("OpenFridgeleft");
+            FPSController.enabled = false;
+            FrigeCanvas.SetActive(true);
         }
     }
 
@@ -20,7 +29,8 @@ public class FridgeTrigger : MonoBehaviour
     {
         if (isOpen == true)
         {
-            Door.Play("CloseFridgeright, CloseFridgelift");
+            Door.Play("CloseFridgeright");
+            FrigeCanvas.SetActive(false);
         }
     }
 }

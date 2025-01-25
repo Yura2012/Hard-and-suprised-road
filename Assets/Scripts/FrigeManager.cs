@@ -5,12 +5,15 @@ using UnityEngine.UI;
 
 public class FridgeManager : MonoBehaviour
 {
-    public int AppleMax, MivinaMax;
-    public int AppleAmount, MivinaAmount;
-    public Text AppleText, MivinaText;
+    public int AppleMax, BananaMax;
+    public int AppleAmount, BananaAmount;
+    public Text AppleText, BananaText;
     public Slider HP, Thirst, Hunger;
     public GameObject FridgeUiObj;
-    // Update is called once per frame
+    public FirstPersonController FPScontroller;
+    public GameObject FrigeCanvas;
+
+            // Update is called once per frame
     void Update()
     {
         Cursor.visible = true;
@@ -19,7 +22,8 @@ public class FridgeManager : MonoBehaviour
         Hunger.value -= 1 * Time.deltaTime;
         Hunger.value -= 2 * Time.deltaTime;
         // Оновлення тексту для відображення кількості яблук
-        AppleText.text = "Apple: "+AppleAmount.ToString() + " / " + AppleMax.ToString();
+        AppleText.text = "Apple: " + AppleAmount.ToString() + " / " + AppleMax.ToString();
+        AppleText.text = "Banana: " + BananaAmount.ToString() + " / " + BananaMax.ToString();
 
         // Зменшення HP, якщо значення Thirst або Hunger <= 0
         if (Thirst.value <= 0)
@@ -48,11 +52,25 @@ public class FridgeManager : MonoBehaviour
             Hunger.value += 10; // Наприклад, споживання яблука відновлює голод
         }
     }
+
+    public void EatBanana()
+    {
+        // Перевірка, чи є яблука в холодильнику
+        if (BananaAmount > 0)
+        {
+            BananaAmount -= 1;
+            Hunger.value += 8; // Наприклад, споживання яблука відновлює голод
+        }
+    }
+
     public void close()
     {
         FridgeUiObj.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-    }
+        FPScontroller.enabled = true;
+        FrigeCanvas.SetActive(false);
+
+}
 
 }
