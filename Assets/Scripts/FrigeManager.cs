@@ -41,7 +41,7 @@ public class FridgeManager : MonoBehaviour
 
         if (Fatigue.value <= 0)
         {
-            HP.value -= 3 * Time.deltaTime;
+            HP.value -= 1 * Time.deltaTime;
         }
 
         // Відновлення HP, якщо Hunger і Thirst > 50
