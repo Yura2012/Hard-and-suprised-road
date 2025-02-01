@@ -26,7 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Budilnik_EN.unity
     guid: b727af75ceb7f2942b1ce363a8c5b52e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Pause.unity
     guid: da545ac7cb2064846ac196b6da89543f
   - enabled: 1
@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prehistory.unity
     guid: d70f2ac60d0b242418f8061fc2d264d2
+  - enabled: 1
+    path: Assets/Scenes/Budilnik_UA.unity
+    guid: 6bade54ff2c857a4a8fc11dab52694aa
   m_configObjects: {}

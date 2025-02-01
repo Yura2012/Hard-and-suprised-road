@@ -71,6 +71,6 @@ public class TaskList2 : MonoBehaviour
     private void PickUpPacket()
     {
         packet.transform.SetParent(player);
-      packet.transform.position = new Vector3(1.75f, -0.36f, -5.63f);
+      packet.transform.position = new Vector3(-4.61f, -1.33f, 1.29f);
     }
 }

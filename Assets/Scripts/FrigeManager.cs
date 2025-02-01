@@ -96,8 +96,8 @@ public class FridgeManager : MonoBehaviour
         FridgeUiObj.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        FPScontroller.enabled = true;
         FrigeCanvas.SetActive(false);
+        FPScontroller.enabled = true;
 
 }
 

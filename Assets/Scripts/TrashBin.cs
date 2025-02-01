@@ -1,14 +1,15 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TrashBin : MonoBehaviour
 {
     private bool lidOpen = false;
-    private InteractionController interactionController;
+    public Animator animator;
+    public Text interactionText;
 
     private void Start()
     {
-        // Знаходимо InteractionController у сцені
-        interactionController = FindObjectOfType<InteractionController>();
+
     }
 
     private void Update()
@@ -18,7 +19,8 @@ public class TrashBin : MonoBehaviour
         {
             if (!lidOpen)
             {
-                interactionController.ShowText("Натисніть E, щоб відкрити кришку сміттєвого бака");
+                interactionText.gameObject.SetActive(true);
+                interactionText.text = "Натисніть E, щоб відкрити кришку сміттєвого бака";
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     OpenLid();
@@ -26,7 +28,9 @@ public class TrashBin : MonoBehaviour
             }
             else
             {
-                interactionController.ShowText("Натисніть E, щоб викинути сміття");
+                interactionText.gameObject.SetActive(true);
+                interactionText.text = "Натисніть E, щоб викинути сміття";
+             
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     ThrowTrash();
@@ -35,20 +39,21 @@ public class TrashBin : MonoBehaviour
         }
         else
         {
-            interactionController.HideText();
+            interactionText.gameObject.SetActive(false);
         }
     }
 
     private void OpenLid()
     {
         lidOpen = true;
-        interactionController.HideText();
-        transform.Find("Lid").Rotate(Vector3.right * 90); // Відкриваємо кришку
+        interactionText.gameObject.SetActive(false);
+        animator.SetTrigger("openLidTrigger");
+     
     }
 
     private void ThrowTrash()
     {
-        interactionController.HideText();
+        interactionText.gameObject.SetActive(false);
         // Можна додати анімацію викидання пакету
         // Пакет просто падає в бак
         Debug.Log("Сміття викинуте в бак!");
@@ -58,6 +63,6 @@ public class TrashBin : MonoBehaviour
     private void CloseLid()
     {
         lidOpen = false;
-        transform.Find("Lid").Rotate(Vector3.left * 90); // Закриваємо кришку
+        animator.SetTrigger("closeLidTrigger");
     }
 }

@@ -30,6 +30,7 @@ public class FridgeTrigger : MonoBehaviour
         if (isOpen == true)
         {
             Door.Play("CloseFridgeright");
+            FPSController.enabled = true;
             FrigeCanvas.SetActive(false);
         }
     }
