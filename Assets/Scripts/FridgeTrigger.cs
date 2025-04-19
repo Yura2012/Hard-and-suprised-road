@@ -22,6 +22,8 @@ public class FridgeTrigger : MonoBehaviour
             Door.Play("OpenFridgeleft");
             FPSController.enabled = false;
             FrigeCanvas.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 
@@ -32,6 +34,8 @@ public class FridgeTrigger : MonoBehaviour
             Door.Play("CloseFridgeright");
             FPSController.enabled = true;
             FrigeCanvas.SetActive(false);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 }
