@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2075794606299383233}
   - component: {fileID: 8340509556884124216}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas_EN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,7 +112,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2616986015844310062, guid: 40d18fc85fa36554c8783399b5ac7551, type: 3}
       propertyPath: m_Text
-      value: "\u041D\u0430 \u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456 \u0445\u0432\u0430\u0442\u0438\u0442\u044C"
+      value: You have completed your job for today
       objectReference: {fileID: 0}
     - target: {fileID: 2973127294158842410, guid: 40d18fc85fa36554c8783399b5ac7551, type: 3}
       propertyPath: m_Pivot.x
