@@ -63,6 +63,6 @@ public class TrashBin : MonoBehaviour
     private void CloseLid()
     {
         lidOpen = false;
-        animator.SetTrigger("closeLidTrigger");
+        animator.SetTrigger("clo'seLidTrigger");
     }
 }
