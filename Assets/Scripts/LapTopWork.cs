@@ -49,7 +49,8 @@ public class LapTopWork : MonoBehaviour
 
             if (WorkProgress.value >= 100)
             {
-                Instantiate(prefab, emptyGameObject.transform.position, emptyGameObject.transform.rotation);
+                GameObject newObject = Instantiate(prefab, emptyGameObject.transform.position, emptyGameObject.transform.rotation);
+                Destroy(newObject, 3f); // Знищити через 3 секунди
                 WorkProgress.value = 0;
                 MoneyCounterScript.Money += Payment;
                 canWork = false;
