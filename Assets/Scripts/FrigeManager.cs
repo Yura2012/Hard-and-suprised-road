@@ -12,6 +12,7 @@ public class FridgeManager : MonoBehaviour
     public GameObject FridgeUiObj;
     public FirstPersonController FPScontroller;
     public GameObject FrigeCanvas;
+    public GameObject BuyCanvas;
 
             // Update is called once per frame
     void Update()
@@ -98,6 +99,15 @@ public class FridgeManager : MonoBehaviour
         FrigeCanvas.SetActive(false);
         FPScontroller.enabled = true;
 
-}
+    }
+
+    public void Buy()
+    {
+        BuyCanvas.SetActive(true);
+        FridgeUiObj.SetActive(false);
+        FrigeCanvas.SetActive(false);
+        FPScontroller.enabled = false;
+
+    }
 
 }
