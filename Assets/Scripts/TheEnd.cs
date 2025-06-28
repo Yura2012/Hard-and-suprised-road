@@ -7,7 +7,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void Update()
     {
-        if (moneyCounter.Money >= 1000)
+        if (moneyCounter.Money >= 2000)
         {
             Canvas.gameObject.SetActive(true); // Показати Canvas
         }
