@@ -10,7 +10,7 @@ public class AlarmPrompt : MonoBehaviour
     {
         if (promptText != null)
         {
-            promptText.text = "ўоб зупинити будильник, натисни (E)";
+            promptText.text = "To stop the alarm, press (E)";
             promptText.gameObject.SetActive(true);
         }
 

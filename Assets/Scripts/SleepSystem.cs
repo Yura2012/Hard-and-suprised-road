@@ -7,6 +7,7 @@ public class SleepSystem : MonoBehaviour
     public GameObject sleepPanel; // Панель затемнення
     public Text sleepText; // Текст "Sleep zzZ"
     public Text promptText; // Текст "Щоб лягти спати..."
+    public Slider Slider;
 
     private bool isNearBed = false;
 
@@ -29,6 +30,7 @@ public class SleepSystem : MonoBehaviour
         sleepPanel.SetActive(true); // Показуємо чорну панель
         sleepText.gameObject.SetActive(true); // Показуємо текст "Sleep zzZ"
         yield return new WaitForSeconds(3); // Чекаємо 3 секунди
+        Slider.value = 100;
         sleepPanel.SetActive(false); // Ховаємо чорну панель
         sleepText.gameObject.SetActive(false); // Ховаємо текст
     }

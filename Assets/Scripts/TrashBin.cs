@@ -20,7 +20,7 @@ public class TrashBin : MonoBehaviour
             if (!lidOpen)
             {
                 interactionText.gameObject.SetActive(true);
-                interactionText.text = "Натисніть E, щоб відкрити кришку сміттєвого бака";
+                interactionText.text = "Press E to open the trash can lid";
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     OpenLid();
@@ -29,7 +29,6 @@ public class TrashBin : MonoBehaviour
             else
             {
                 interactionText.gameObject.SetActive(true);
-                interactionText.text = "Натисніть E, щоб викинути сміття";
              
                 if (Input.GetKeyDown(KeyCode.E))
                 {

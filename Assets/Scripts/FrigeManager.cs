@@ -18,10 +18,6 @@ public class FridgeManager : MonoBehaviour
     void Update()
     {
         
-
-        Hunger.value -= 1 * Time.deltaTime;
-        Thirst.value -= 2 * Time.deltaTime;
-        Fatigue.value -= 0.0001f * 0.0001f * Time.deltaTime;
         // Оновлення тексту для відображення кількості яблук
         AppleText.text = "Apple: " + AppleAmount.ToString() + " / " + AppleMax.ToString();
         BananaText.text = "Banana: " + BananaAmount.ToString() + " / " + BananaMax.ToString();
